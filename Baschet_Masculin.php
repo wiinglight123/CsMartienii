@@ -36,11 +36,11 @@
         <h1>Echipa de Baschet Masculin</h1>
 
         <div class="players">
+
             <?php
-            $query = "SELECT * FROM football_club.team_members WHERE echipa='Baschet'";
+            $query = "SELECT * FROM `team_members` WHERE echipa='Baschet Masculin' ORDER BY position ASC;";
             $result = mysqli_query($conexiune, $query);
             if (mysqli_num_rows($result) > 0) {
-                // Parcurgem fiecare rând din rezultatul interogării
                 while ($row = mysqli_fetch_assoc($result)) {
                     // Afisăm numele și imaginea fiecărui jucător
                     echo "<div class='player'>";

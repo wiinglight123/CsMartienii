@@ -37,7 +37,7 @@
 
         <div class="players">
             <?php
-            $query = "SELECT * FROM football_club.team_members WHERE echipa='Fotbal Masculin'";
+            $query = "SELECT * FROM football_club.team_members WHERE echipa='Fotbal Masculin'order by position asc";
             $result = mysqli_query($conexiune, $query);
             if (mysqli_num_rows($result) > 0) {
                 // Parcurgem fiecare rând din rezultatul interogării
