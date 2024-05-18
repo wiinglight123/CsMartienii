@@ -1,0 +1,33 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="football_club.sql" type="DatabaseScript" editBeforeRun="true">
+    <script-text>CREATE DATABASE IF NOT EXISTS football_club;
+
+USE football_club;
+
+-- Tabela pentru anunțuri
+CREATE TABLE IF NOT EXISTS announcements (
+                                             id INT AUTO_INCREMENT PRIMARY KEY,
+                                             title VARCHAR(100) NOT NULL,
+    content TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );
+
+-- Tabela pentru membrii echipelor
+CREATE TABLE IF NOT EXISTS team_members (
+                                            id INT AUTO_INCREMENT PRIMARY KEY,
+                                            name VARCHAR(50) NOT NULL,
+    position VARCHAR(50),
+    team VARCHAR(50),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );
+
+-- Tabela pentru utilizatori (pentru autentificare în secțiunea de administrare)
+CREATE TABLE IF NOT EXISTS users (
+                                     id INT AUTO_INCREMENT PRIMARY KEY,
+                                     username VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );</script-text>
+    <method v="2" />
+  </configuration>
+</component>
