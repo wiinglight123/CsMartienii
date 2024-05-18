@@ -12,7 +12,7 @@
 </head>
 <body>
 <header>
-    <h1>hihh
+    <h1>
         <div class="container">
             <img src="Images/logo.png" alt="Your Image" class="rotate-img">
             CS Martienii
