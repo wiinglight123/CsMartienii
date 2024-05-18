@@ -13,7 +13,12 @@
 <?php
 require_once "connect.php";
 ?>
+
+<footer>
+    <p>&copy; 2024 CS Martienii. Toate drepturile rezervate.</p>
+</footer>
 <header>
+
     <h1>
         <div class="container">
             <img src="Images/logo.png" alt="Your Image" class="rotate-img">
@@ -67,6 +72,8 @@ require_once "connect.php";
                 }
             }
             ?>
+
         </div>
+
     </div>
 

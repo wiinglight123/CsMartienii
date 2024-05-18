@@ -56,7 +56,7 @@
 
 </div>
 <footer>
-    <p>&copy; 2024 FC Cojeasca. Toate drepturile rezervate.</p>
+    <p>&copy; 2024 CS Martienii. Toate drepturile rezervate.</p>
 </footer>
 </body>
 </html>
